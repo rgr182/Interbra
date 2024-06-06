@@ -29,6 +29,8 @@ header h1 span {
 
 /* Navigation Styles */
 nav {
+    position: sticky;
+    top: 0%;
     background-color: rgb(75, 3, 53);
     padding: 10px 0;
 }
