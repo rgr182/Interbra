@@ -1,117 +1,118 @@
-/* General Styles */
+/* Estilos Generales */
+/* ------------------ */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("../Imagenes/FB_IMG_1715964283264.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../Imagenes/FB_IMG_1715964283264.jpg"); /* Establece una imagen de fondo para el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el cuerpo */
+    font-family: Arial, sans-serif; /* Establece la familia de fuentes para el texto del cuerpo */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
 }
 
-/* Header Styles */
+/* Estilos del Encabezado */
+/* ------------------ */
 header {
-    background-color: hotpink;
-    padding: 20px;
-    text-align: center;
+    background-color: hotpink; /* Establece el color de fondo del encabezado */
+    padding: 20px; /* Agrega relleno alrededor del encabezado */
+    text-align: center; /* Centra el contenido del encabezado */
 }
 
 header h1 {
-    color: rgb(14, 15, 14);
-    font-size: 280%;
+    color: rgb(14, 15, 14); /* Establece el color del texto del título */
+    font-size: 280%; /* Establece el tamaño del texto del título */
 }
 
 header h1 span {
-    display: block;
-    font-size: 0.8em;
-    font-weight: normal;
-    margin-top: 10px;
+    display: block; /* Hace que el elemento de línea sea un bloque */
+    font-size: 0.8em; /* Establece el tamaño del texto del subtitulo */
+    font-weight: normal; /* Establece el peso normal para el texto del subtitulo */
+    margin-top: 10px; /* Agrega un margen superior al subtitulo */
 }
 
-/* Navigation Styles */
+/* Estilos de la Navegación */
+/* ------------------ */
 nav {
-    position: sticky;
-    top: 0%;
-    background-color: rgb(75, 3, 53);
-    padding: 10px 0;
+    background-color: rgb(75, 3, 53); /* Establece el color de fondo de la barra de navegación */
+    padding: 10px 0; /* Agrega relleno en la parte superior e inferior de la barra de navegación */
+    position: sticky; /* Fija la barra de navegación en la parte superior de la ventana */
+    top: 0; /* Coloca la barra de navegación en la parte superior */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Muestra los elementos de la lista como una fila */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Agrega margen a cada elemento de la lista */
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    color: white; /* Establece el color del texto del enlace */
+    display: block; /* Muestra los enlaces como bloques */
+    padding: 10px 20px; /* Agrega relleno alrededor de los enlaces */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
 }
 
 nav ul li a:hover {
-    background-color: rgb(100, 20, 70);
+    background-color: rgb(100, 20, 70); /* Cambia el color de fondo del enlace al pasar el mouse sobre él */
 }
 
-/* Main Styles */
+/* Estilos Principales */
+/* ------------------ */
 .container {
-    text-align: center;
-    padding: 20px;
+    padding: 20px; /* Agrega relleno alrededor del contenedor */
+    text-align: center; /* Centra el contenido del contenedor */
 }
 
 .container img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
+    height: auto; /* Hace que la imagen mantenga su relación de aspecto */
+    margin: 20px 0; /* Agrega margen arriba y abajo de la imagen */
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
 }
 
 h2 {
-    font-size: 250%;
-    margin: 20px 0;
+    font-size: 250%; /* Establece el tamaño del texto del subtítulo */
+    margin: 20px 0; /* Agrega margen arriba y abajo del subtítulo */
 }
 
 h3 {
-    color: blue;
-    font-size: 250%;
-    margin: 20px 0;
+    color: blue; /* Establece el color del texto del subsubtítulo */
+    font-size: 250%; /* Establece el tamaño del texto del subsubtítulo */
+    margin: 20px 0; /* Agrega margen arriba y abajo del subsubtítulo */
 }
 
-/* Footer Styles */
+/* Estilos del Pie de Página */
+/* ------------------ */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    margin-top: 40px;
-}
-
-footer .social-media {
-    margin: 10px 0;
-}
-
-footer .social-media a {
-    margin: 0 10px;
+    background-color: #f1f1f1; /* Establece el color de fondo del pie de página */
+    margin-top: 40px; /* Agrega margen arriba del pie de página */
+    padding: 20px; /* Agrega relleno alrededor del pie de página */
+    text-align: center; /* Centra el contenido del pie de página */
 }
 
 footer .social-icon {
-    width: 24px;
-    height: 24px;
+    height: 24px; /* Establece la altura del ícono de redes sociales */
+    width: 24px; /* Establece el ancho del ícono de redes sociales */
 }
 
-footer p {
-    margin: 10px 0;
+footer .social-media {
+    margin: 10px 0; /* Agrega margen arriba y abajo de los íconos de redes sociales */
 }
 
 footer a {
-    text-decoration: none;
-    color: #0000EE;
+    color: #0000EE; /* Establece el color del texto del enlace en el pie de página */
+    text-decoration: none; /* Elimina la subrayado del enlace en el pie de página */
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse sobre el enlace en el pie de página */
+}
+
+footer p {
+    margin: 10px 0; /* Agrega margen arriba y abajo de los párrafos en el pie de página */
 }
