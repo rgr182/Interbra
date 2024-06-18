@@ -1,207 +1,143 @@
-/* Estilos Generales */
-/* ------------------ */
 body {
-    background-image: url("../Imagenes/FB_IMG_1715964283264.jpg") !important;
-    /* Establece una imagen de fondo para el cuerpo */
-    background-repeat: no-repeat !important;
-    /* Evita que la imagen de fondo se repita */
-    background-size: cover !important;
-    /* Hace que la imagen de fondo cubra todo el cuerpo */
-    font-family: Arial, sans-serif !important;
-    /* Establece la familia de fuentes para el texto del cuerpo */
-    margin: 0 !important;
-    /* Elimina el margen exterior */
-    padding: 0 !important;
-    /* Elimina el relleno interior */
+    background-image: url("../Imagenes/FB_IMG_1715964283264.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos del Encabezado */
-/* ------------------ */
 header {
-    background-color: hotpink !important;
-    /* Establece el color de fondo del encabezado */
-    padding: 20px !important;
-    /* Agrega relleno alrededor del encabezado */
-    text-align: center !important;
-    /* Centra el contenido del encabezado */
-    z-index: 9999 !important;
-    position: relative !important;
+    background-color: hotpink;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    position: relative;
 }
 
 header h1 {
-    color: rgb(14, 15, 14) !important;
-    /* Establece el color del texto del título */
-    font-size: 280% !important;
-    /* Establece el tamaño del texto del título */
+    color: rgb(14, 15, 14);
+    font-size: 280%;
 }
 
 header h1 span {
-    display: block !important;
-    /* Hace que el elemento de línea sea un bloque */
-    font-size: 0.8em !important;
-    /* Establece el tamaño del texto del subtítulo */
-    font-weight: normal !important;
-    /* Establece el peso normal para el texto del subtítulo */
-    margin-top: 10px !important;
-    /* Agrega un margen superior al subtítulo */
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
-/* Estilos de la Navegación */
-/* ------------------ */
 nav {
-    background-color: rgb(75, 3, 53) !important;
-    /* Establece el color de fondo de la barra de navegación */
-    padding: 10px 0 !important;
-    /* Agrega relleno en la parte superior e inferior de la barra de navegación */
-    position: sticky !important;
-    /* Fija la barra de navegación en la parte superior de la ventana */
-    top: 0 !important;
-    /* Coloca la barra de navegación en la parte superior */
-    z-index: 9999 !important;
+    background-color: rgb(75, 3, 53);
+    position: fixed;
+    top: 210px;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: left;
 }
 
 nav ul {
-    display: flex !important;
-    /* Muestra los elementos de la lista como una fila */
-    justify-content: center !important;
-    /* Centra los elementos de la lista horizontalmente */
-    list-style-type: none !important;
-    /* Elimina los marcadores de lista */
-    margin: 0 !important;
-    /* Elimina el margen exterior */
-    padding: 0 !important;
-    /* Elimina el relleno interior */
-    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 15px !important;
-    /* Agrega margen a cada elemento de la lista */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white !important;
-    /* Establece el color del texto del enlace */
-    display: block !important;
-    /* Muestra los enlaces como bloques */
-    padding: 10px 20px !important;
-    /* Agrega relleno alrededor de los enlaces */
-    text-decoration: none !important;
-    /* Elimina el subrayado del enlace */
-    transition: background-color 0.3s !important;
-    /* Agrega una transición suave al cambio de color de fondo */
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: rgb(100, 20, 70) !important;
-    /* Cambia el color de fondo del enlace al pasar el mouse sobre él */
+    background-color: rgb(100, 20, 70);
 }
 
-/* Estilos Principales */
-/* ------------------ */
 .container {
-    padding: 20px !important;
-    /* Agrega relleno alrededor del contenedor */
-    text-align: center !important;
-    /* Centra el contenido del contenedor */
+    padding: 20px;
+    text-align: center;
 }
 
 .container img {
-    height: auto !important;
-    /* Hace que la imagen mantenga su relación de aspecto */
-    margin: 20px 0 !important;
-    /* Agrega margen arriba y abajo de la imagen */
-    max-width: 100% !important;
-    /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: auto;
+    margin: 20px 0;
+    max-width: 100%;
 }
 
 h2 {
-    font-size: 250% !important;
-    /* Establece el tamaño del texto del subtítulo */
-    margin: 20px 0 !important;
-    /* Agrega margen arriba y abajo del subtítulo */
+    font-size: 250%;
+    margin: 20px 0;
 }
 
 h3 {
-    color: blue !important;
-    /* Establece el color del texto del subsubtítulo */
-    font-size: 250% !important;
-    /* Establece el tamaño del texto del subsubtítulo */
-    margin: 20px 0 !important;
-    /* Agrega margen arriba y abajo del subsubtítulo */
+    color: blue;
+    font-size: 250%;
+    margin: 20px 0;
 }
 
-/* Estilos del Pie de Página */
-/* ------------------ */
 footer {
-    background-color: #f1f1f1 !important;
-    /* Establece el color de fondo del pie de página */
-    margin-top: 40px !important;
-    /* Agrega margen arriba del pie de página */
-    padding: 20px !important;
-    /* Agrega relleno alrededor del pie de página */
-    text-align: center !important;
-    /* Centra el contenido del pie de página */
-    z-index: 9999 !important;
-    position: relative !important;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    position: relative;
 }
 
 footer .social-icon {
-    height: 24px !important;
-    /* Establece la altura del ícono de redes sociales */
-    width: 24px !important;
-    /* Establece el ancho del ícono de redes sociales */
+    height: 24px;
+    width: 24px;
 }
 
 footer .social-media {
-    margin: 10px 0 !important;
-    /* Agrega margen arriba y abajo de los íconos de redes sociales */
+    margin: 10px 0;
 }
 
 footer a {
-    color: #0000EE !important;
-    /* Establece el color del texto del enlace en el pie de página */
-    text-decoration: none !important;
-    /* Elimina el subrayado del enlace en el pie de página */
+    color: #0000EE;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline !important;
-    /* Agrega subrayado al pasar el mouse sobre el enlace en el pie de página */
+    text-decoration: underline;
 }
 
 footer p {
-    margin: 10px 0 !important;
-    /* Agrega margen arriba y abajo de los párrafos en el pie de página */
-}
-
-#listaMenu {
-    display: flex !important;
-    justify-content: center !important;
-    /* Centra los elementos horizontalmente */
-    list-style-type: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-}
-
-#listaMenu li {
-    margin: 0 15px !important;
-}
-
-#listaMenu li a {
-    color: white !important;
-    text-decoration: none !important;
-    padding: 10px 20px !important;
-    display: block !important;
-    transition: background-color 0.3s !important;
-}
-
-#listaMenu li a:hover {
-    background-color: rgb(100, 20, 70) !important;
+    margin: 10px 0;
 }
 
 #panty {
-    color: green !important;
-    background-color: red !important; /* Ejemplo de cómo puedes aplicar estilos específicos a un elemento */
+    color: greenyellow;
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    background-color: whitesmoke;
+    margin: 20px;
+    height: 40px;
+    width: 60px;
+    content: flex;
+    flex-direction: row-reverse;
+}
+
+.Brasier {
+    background-color: blue;
+}
+
+.Panty {
+    background-color: blue;
+}
+
+.Conocenos {
+    background-color: blue;
 }
