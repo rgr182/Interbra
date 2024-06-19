@@ -1,45 +1,28 @@
 body {
-    background-image: url("../Imagenes/FB_IMG_1715964283264.jpg");
+    background-image: url("../Imagenes/logo_interbra.png");
     background-repeat: no-repeat;
-    background-size: cover;
+background-position: initial;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-size: contain;
 }
 
-header {
-    background-color: hotpink;
-    padding: 20px;
-    text-align: center;
-    z-index: 9999;
-    position: relative;
-}
-
-header h1 {
-    color: rgb(14, 15, 14);
-    font-size: 280%;
-}
-
-header h1 span {
-    display: block;
-    font-size: 0.8em;
-    font-weight: normal;
-    margin-top: 10px;
-}
 
 nav {
     background-color: rgb(75, 3, 53);
-    position: fixed;
+
     top: 210px;
     width: 100%;
     z-index: 9999;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -48,6 +31,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    display: flex;
 }
 
 nav ul li a {
@@ -56,6 +40,7 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     transition: background-color 0.3s;
+    display: flex;
 }
 
 nav ul li a:hover {
@@ -63,7 +48,7 @@ nav ul li a:hover {
 }
 
 .container {
-    padding: 20px;
+    padding: 573px;
     text-align: center;
 }
 
@@ -73,24 +58,29 @@ nav ul li a:hover {
     max-width: 100%;
 }
 
+
 h2 {
     font-size: 250%;
     margin: 20px 0;
+    text-align: center;
 }
 
 h3 {
     color: blue;
     font-size: 250%;
     margin: 20px 0;
+    text-align: center;
 }
 
 footer {
-    background-color: #f1f1f1;
+
     margin-top: 40px;
-    padding: 20px;
+    padding: 600px;
     text-align: center;
     z-index: 9999;
-    position: relative;
+    position: static;
+    background-color: rgb(45, 44, 44);
+    
 }
 
 footer .social-icon {
@@ -120,24 +110,4 @@ footer p {
     background-color: red;
 }
 
-.container {
-    display: flex;
-    background-color: whitesmoke;
-    margin: 20px;
-    height: 40px;
-    width: 60px;
-    content: flex;
-    flex-direction: row-reverse;
-}
 
-.Brasier {
-    background-color: blue;
-}
-
-.Panty {
-    background-color: blue;
-}
-
-.Conocenos {
-    background-color: blue;
-}
