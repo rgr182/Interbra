@@ -14,7 +14,7 @@ header .banner {
 
 header .banner img {
     max-width: 200px; /* Ajusta este valor según sea necesario para obtener el tamaño deseado */
-    height: auto;
+    height: fit-content;
 }
 
 nav {
@@ -112,7 +112,12 @@ footer p {
     margin: 10px 0;
 }
 
-#panty {
-    color: greenyellow;
-    background-color: red;
+.logo {
+    height: fit-content;
+    width: 35px;
+
+}
+.social-icon {
+    height: fit-content;
+    width: 35px;
 }
