@@ -1,5 +1,6 @@
 body {
-    background-color: #f7e3e7; /* Ajustado para coincidir con el color de fondo de la imagen */
+    background-color: #f7e3e7;
+    /* Ajustado para coincidir con el color de fondo de la imagen */
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
@@ -10,15 +11,17 @@ body {
 header .banner {
     text-align: center;
     padding: 20px 0;
+    background-color: #f7e3e7;
 }
 
 header .banner img {
-    max-width: 200px; /* Ajusta este valor según sea necesario para obtener el tamaño deseado */
+    max-width: 108px;
     height: fit-content;
+    border-radius: 35px;
+
 }
 
 nav {
-    background-color: rgb(75, 3, 53);
     width: 100%;
     z-index: 9999;
     display: flex;
@@ -42,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #605e5e;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
@@ -55,36 +58,25 @@ nav ul li a:hover {
 }
 
 .container {
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     flex: 1;
 }
 
 .container img {
-    height: auto;
-    margin: 20px 0;
-    max-width: 100%;
+    height: ;
+    margin: 0px;
+
 }
 
-h2 {
-    font-size: 250%;
-    margin: 20px 0;
-    text-align: center;
-}
 
-h3 {
-    color: blue;
-    font-size: 250%;
-    margin: 20px 0;
-    text-align: center;
-}
-
+/que no se muve el pinche footer/
 footer {
     text-align: center;
     z-index: 9999;
-    background-color: rgb(45, 44, 44);
+    background-color: rgb(249 233 233 / 0%);
     color: white;
-    padding: 10px 0;
+    padding: 18px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -117,7 +109,9 @@ footer p {
     width: 35px;
 
 }
+
 .social-icon {
     height: fit-content;
     width: 35px;
 }
+
