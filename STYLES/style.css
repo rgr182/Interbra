@@ -7,10 +7,6 @@ body {
     min-height: 100vh;
 }
 
-header{
-    background-color: rgba(128, 128, 128, 0.603);
-}
-
 header .banner {
     text-align: center;
     padding: 20px 0;
@@ -59,12 +55,6 @@ nav ul li a:hover {
     background-color: rgb(100, 20, 70);
 }
 
-#main_content {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
 .container {
     padding: 0;
     text-align: center;
@@ -74,19 +64,16 @@ nav ul li a:hover {
 .container img {
     height: auto;
     margin: 0;
-    max-width: 1024px;
-    max-height: 1024px;
 }
 
 footer {
     text-align: center;
     z-index: 9999;
-    background-color: rgba(249, 233, 233, 0.5);
+    background-color: rgba(249, 233, 233, 50%);
     color: white;
     padding: 18px 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.603);
 }
 
 footer .social-icon {
