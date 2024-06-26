@@ -61,18 +61,7 @@ nav ul li a:hover {
     background-color: rgb(100, 20, 70);
 }
 
-.container {
-    padding: 0;
-    text-align: center;
-    flex: 1;
-}
 
-.container img {
-    height: auto;
-    margin: 0;
-    max-width: 1024px;
-    max-height: 1024px;
-}
 
 footer {
     text-align: center;
@@ -115,4 +104,28 @@ footer p {
 .social-icon {
     height: auto;
     width: 35px;
+}
+.galeria {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    width: 90%; 
+    max-width: 1200px;
+    height: 300px;
+    overflow: hidden; 
+}
+
+.galeria img {
+    flex: 1;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+.galeria img:hover {
+    filter: brightness(130%);
+    flex: 0 0 100%;
+    max-width: 100%; 
 }
