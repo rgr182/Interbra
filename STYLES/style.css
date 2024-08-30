@@ -5,12 +5,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    height: 50%;
+    width: 1519px;
+    object-fit: contain;
 }
 
 header .banner {
     text-align: center;
     padding: 20px 0;
     background-color: #f7e3e7;
+    box-shadow: #605e5e;
 }
 
 #main_content {
@@ -23,6 +27,32 @@ header .banner img {
     max-width: 108px;
     height: auto;
     border-radius: 35px;
+    display: flex;
+}
+header .social-media {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: #f7e3e7;
+    padding: 0%;
+
+}
+
+header .social-icon {
+    height: 25px;
+    width: 30px;
+    margin: 10px; 
+    padding: 0%;
+    display: inline-block; 
+    background-color: #f7e3e7;
+}
+ .home {
+height: 40pxpx;
+width: 40px;
+margin: 0%;
+background-color: #f7e3e7;
+display: flex;
+
 }
 
 nav {
@@ -32,6 +62,7 @@ nav {
     justify-content: center;
     position: sticky;
     top: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav ul {
@@ -41,6 +72,7 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 30px;
 }
 
 nav ul li {
@@ -56,11 +88,36 @@ nav ul li a {
     transition: background-color 0.3s;
     display: flex;
 }
-
 nav ul li a:hover {
     background-color: rgb(100, 20, 70);
 }
 
+.brasier4{
+ text-align: center;
+ width: 500px;
+ height: 300px;
+ margin: auto;
+}
+
+.contenedor {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px; 
+    justify-content: center;
+}
+
+.box {
+    border: 2px solid #333; 
+    padding: 20px;         
+    background-color: #f4f4f4; 
+    width: 300px;      
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    background-color: #f19dbe;
+    display: grid;
+    justify-content: center;
+}
 
 
 footer {
@@ -73,16 +130,6 @@ footer {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.603);
 }
-
-footer .social-icon {
-    height: 24px;
-    width: 24px;
-}
-
-footer .social-media {
-    margin: 10px 0;
-}
-
 footer a {
     color: #0000EE;
     text-decoration: none;
@@ -101,10 +148,6 @@ footer p {
     width: 35px;
 }
 
-.social-icon {
-    height: auto;
-    width: 35px;
-}
 .galeria {
     display: flex;
     justify-content: center; 
