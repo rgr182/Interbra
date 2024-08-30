@@ -5,63 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interbra &#x2764;</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="icon" type="image/x-icon" href="./Imagenes/interbralogo.jpg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Script de Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/index.js"></script>
 </head>
 
-<body>
-    <header>
-        <div class="banner">
-            <img src="./Imagenes/interbralogo.jpg" alt="Interbra Logo">
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid bg-light py-3 mb-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="./Imagenes/interbralogo.jpg" alt="Interbra Logo" class="img-fluid rounded-circle me-3" style="max-width: 60px;">
+                <a href="index.html" class="text-decoration-none text-dark">
+                    <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-dark" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="./Catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="./Talla.html">Conoce tu talla</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="./Tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex">
+                <a target="_blank" href="https://es-la.facebook.com/interbralenceria/" class="me-2">
+                    <i class="bi bi-facebook text-dark" style="font-size: 1.5rem;"></i>
+                </a>
+                <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria">
+                    <i class="bi bi-tiktok text-dark" style="font-size: 1.5rem;"></i>
+                </a>
+            </div>
         </div>
-        <div class="home">
-            <a href="index.html">
-            <img src="./Imagenes/CasitaFinal.png" alt="home" class="home">
-            </a>
-        </div>
-        <div class="social-media">
-            <a target="_blank" href="https://es-la.facebook.com/interbralenceria/">
-                <img src="./Imagenes/fbfinal.png" alt="Facebook" class="social-icon">
-            </a>
-            <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria">
-                <img src="./Imagenes/tiktokfinal.png" alt="TikTok" class="social-icon">
-            </a>
-        </div>
-        <nav id="barramenu">
-            <ul id="listaMenu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Catalogo.html">Catalogo</a></li>
-                <li><a href="./Talla.html">Conoce tu talla</a></li>
-                <li><a href="./Tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
     </header>
 
-<img src="./Imagenes/brasier4.jpg" alt="brasier4" class="brasier4">
-    
-<div class="contenedor">
-        <div class="box">
-            <p>Somos INTERBRA nos dedicamos a la venta en mayoreo de ropa interior femenina. Contamos con excelentes precios, los testimonios de nuestros clientes nos respaldan.</p>
+    <main class="container flex-grow-1">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <img src="./Imagenes/brasier4.jpg" alt="brasier4" class="img-fluid rounded shadow">
+            </div>
         </div>
-        <div class="box">
-            <p>Testimonios y reseñas de nuestros clientes.
-                <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria">
-                </a>
-            </p>
-        </div>
-        <div class="box">
-            <p>Promociones y descuentos. Contacta con alguno de nuestros asesores para más información.</p>
-        </div>
-    </div>
 
-    <footer>
-        <a href="./Contacto.html">Contacto</a>
-        <p><strong>Pregunta por nuestros DESCUENTOS!, un asesor te atenderá con gusto.</strong></p>
-        <p><strong>ENVIOS A TODA LA REPÚBLICA MEXICANA</strong></p>
-        <p><strong>WHATSAPP:</strong></p>
-        <p><strong>HORARIO DE ATENCIÓN: 10AM-7PM, Lunes a Sábado</strong></p>
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="p-4 bg-pink text-dark rounded shadow-sm">
+                    <p>Somos INTERBRA nos dedicamos a la venta en mayoreo de ropa interior femenina. Contamos con excelentes precios, los testimonios de nuestros clientes nos respaldan.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-4 bg-pink text-dark rounded shadow-sm">
+                    <p>Testimonios y reseñas de nuestros clientes. <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria" class="text-decoration-none">Ver en TikTok</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="p-4 bg-pink text-dark rounded shadow-sm">
+                    <p>Promociones y descuentos. Contacta con alguno de nuestros asesores para más información.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <a href="./Contacto.html" class="text-warning text-decoration-none">Contacto</a>
+            <p class="mt-3"><strong>Pregunta por nuestros DESCUENTOS!, un asesor te atenderá con gusto.</strong></p>
+            <p><strong>ENVIOS A TODA LA REPÚBLICA MEXICANA</strong></p>
+            <p><strong>WHATSAPP:</strong></p>
+            <p><strong>HORARIO DE ATENCIÓN: 10AM-7PM, Lunes a Sábado</strong></p>
+        </div>
     </footer>
 </body>
 
