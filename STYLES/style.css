@@ -160,3 +160,10 @@ footer p {
     flex: 0 0 100%;
     max-width: 100%; 
 }
+
+.modal {
+    z-index: 10000; /* Bootstrap default */
+}
+.modal-backdrop.show {
+    opacity: 0.8; /* Más opacidad para oscurecer el fondo */
+}
