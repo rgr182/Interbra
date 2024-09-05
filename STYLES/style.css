@@ -84,12 +84,7 @@ nav ul li a:hover {
     background-color: rgb(100, 20, 70);
 }
 
-.brasier4 {
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    margin: auto;
-}
+
 
 .contenedor {
     display: grid; 
@@ -161,9 +156,11 @@ footer p {
     max-width: 100%; 
 }
 
-.modal {
-    z-index: 10000; /* Bootstrap default */
+.carousel-item {
+    max-width: 12970;
+    max-height: 315px;
 }
-.modal-backdrop.show {
-    opacity: 0.8; /* Más opacidad para oscurecer el fondo */
+.carousel-item image{
+    height: 40px;
+    width: 40px;
 }
