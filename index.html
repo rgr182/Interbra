@@ -21,7 +21,8 @@
     <header class="container-fluid bg-light py-3 mb-4 shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="./Imagenes/interbralogo.jpg" alt="Interbra Logo" class="img-fluid rounded-circle me-3" style="max-width: 60px;">
+                <img src="./Imagenes/interbralogo.jpg" alt="Interbra Logo" class="img-fluid rounded-circle me-3"
+                    style="max-width: 60px;">
                 <a href="index.html" class="text-decoration-none text-dark me-2">
                     <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i>
                 </a>
@@ -51,43 +52,37 @@
         </div>
     </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./Imagenes/brasier4.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./Imagenes/36bsv.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./Imagenes/32b.jpg" alt="Third slide">
+    <main class="container flex-grow-1">
+
+          <!-- Botones de Login/Sign Up -->
+          <div class="text-center mb-4">
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                Sign Up
+            </button>
+        </div>
+
+
+        <div class="row mb-4">
+            <div class="col text-center">
+                <img src="./Imagenes/brasier4.jpg" alt="Brasier" class="img-fluid rounded shadow">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-
-    <div class="container my-4">
+      
         <div class="row text-center">
             <div class="col-md-4 mb-3">
                 <div class="p-4 bg-pink text-dark rounded shadow-sm">
-                    <p>Somos INTERBRA y nos dedicamos a la venta en mayoreo de ropa interior femenina. Contamos con excelentes precios y los testimonios de nuestros clientes nos respaldan.</p>
+                    <p>Somos INTERBRA y nos dedicamos a la venta en mayoreo de ropa interior femenina. Contamos con
+                        excelentes precios y los testimonios de nuestros clientes nos respaldan.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="p-4 bg-pink text-dark rounded shadow-sm">
-                    <p>Testimonios y reseñas de nuestros clientes. <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria" class="text-decoration-none">Ver en TikTok</a></p>
+                    <p>Testimonios y reseñas de nuestros clientes. <a target="_blank"
+                            href="https://www.tiktok.com/@interbra_lenceria" class="text-decoration-none">Ver en
+                            TikTok</a></p>
                     <a target="_blank" href="https://www.tiktok.com/@interbra_lenceria">
                         <i class="bi bi-tiktok text-dark" style="font-size: 1.5rem;"></i>
                     </a>
@@ -102,7 +97,81 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Modal de Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Sign Up -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="signupName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="signupName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupLastName" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="signupLastName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupGender" class="form-label">Género</label>
+                                <select class="form-select" id="signupGender" required>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="O">Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupDob" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="signupDob" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupUsername" class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="signupUsername" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="signupPassword" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupAddress" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="signupAddress" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Registrarse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <div class="text-center mb-4">
         <a href="https://www.castores.com.mx/" target="_blank" class="d-inline-block">
