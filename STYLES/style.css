@@ -52,7 +52,6 @@ header .social-icon {
 
 nav {
     width: 100%;
-    z-index: 9999;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -84,13 +83,19 @@ nav ul li a:hover {
     background-color: rgb(100, 20, 70);
 }
 
-
+.brasier4 {
+    text-align: center;
+    width: 40´px;
+    height: 30px;
+    margin: auto;
+}
 
 .contenedor {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 10px; 
     justify-content: center;
+    background-color: aqua;
 }
 
 .box {
@@ -163,4 +168,12 @@ footer p {
 .carousel-item image{
     height: 40px;
     width: 40px;
+}
+.buscador{
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    top: 10px;
+ text-align: center;
 }
