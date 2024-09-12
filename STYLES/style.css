@@ -95,7 +95,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 10px; 
     justify-content: center;
-    background-color: aqua;
 }
 
 .box {
@@ -176,4 +175,9 @@ footer p {
     border-radius: 50px;
     top: 10px;
  text-align: center;
+}
+#index_tile {
+    margin-top: 10px;
+    border: 1px solid rgba(139, 136, 136, 0.91);
+    min-height: 160px;
 }
