@@ -13,20 +13,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Script de Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./scripts/Catalogo.js"></script>
+    <script src="./scripts/Producto.js"></script>
 </head>
 
 <body>
     <div class="home">
-        <a href="index.html" class="text-decoration-none text-dark me-2">
+        <a href="Index.html" class="text-decoration-none text-dark me-2">
             <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i>
         </a>
     </div>
     <div class="galeria">
-        <img src="./Imagenes/brasier1.jpg" alt="Brasier 1">
-        <img src="./Imagenes/Brasier2.jpg" alt="Brasier 2">
-        <img src="./Imagenes/Brasier3.jpg" alt="Brasier 3">
     </div>
 
+    <div>
+        <label for="sizeFilter">Talla:</label>
+        <select id="sizeFilter" onchange="applyFilters()">
+            <option value="">Seleccionar</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    
+        <label for="resultLimit">Cantidad</label>
+        <input type="number" id="resultLimit" min="1" max="100" onchange="applyFilters()" />
+    
+        <button onclick="applyFilters()">Aplicar Filtros</button>
+    </div>
 </body>
 </html>

@@ -1,183 +1,60 @@
 body {
-    background-color: #f7e3e7;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 50%;
-    width: 100%; /* Ajustado para responsividad */
-    object-fit: contain;
+    background-color: #fce4ec;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Imagenes/BackGround.jpg'); /* Aplica la imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    background-position: center; /* Centra la imagen */
 }
 
-header .banner {
+.navbar-custom {
+    background: linear-gradient(to right, #e1b3e7, #da71a9);
+    color: #fff;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: #f8bbd0;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: #f8bbd0;
+    transition: color 0.3s;
+}
+
+.social-icon i:hover {
+    color: #fff;
+}
+
+.hero-section {
+    color: #a04b79;
+    padding: 3rem 1rem;
+    font-family: emoji;
+}
+
+.info-card {
+    background-color: #902078;
+    border-radius: 50px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px 0;
-    background-color: #f7e3e7;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#main_content {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-header .banner img {
-    max-width: 108px;
-    height: auto;
-    border-radius: 35px;
-}
-
-header .social-media {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    background-color: #f7e3e7;
-    padding: 0;
-}
-
-header .social-icon {
-    height: 25px;
-    width: 30px;
-    margin: 10px; 
-}
-
-.home {
-    height: 40px;
-    width: 40px;
-    background-color: #f7e3e7;
-    display: flex;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 30px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #605e5e;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-nav ul li a:hover {
-    background-color: rgb(100, 20, 70);
-}
-
-.brasier4 {
-    text-align: center;
-    width: 40´px;
-    height: 30px;
-    margin: auto;
-}
-
-.contenedor {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 10px; 
-    justify-content: center;
-}
-
-.box {
-    border: 2px solid #333; 
-    padding: 20px;         
-    background-color: #f19dbe; 
-    border-radius: 8px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    text-align: center; 
+    
 }
 
 footer {
-    text-align: center;
-    z-index: 9999;
-    background-color: #605e5e; /* Cambiado a un color más oscuro */
-    color: white; /* Color de texto blanco para mayor contraste */
-    padding: 20px 0; /* Añadido más padding para mejorar el espacio */
-    bottom: 0;
-    width: 100%;
-    position: relative; /* Asegura que se posicione correctamente */
-}
-
-footer a {
-    color: #FFD700; /* Cambiado a un color más visible sobre el fondo oscuro */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-.logo {
-    height: auto;
-    width: 35px;
-}
-
-.galeria {
-    display: flex;
-    justify-content: center; 
-    gap: 10px;
-    width: 90%; 
-    max-width: 1200px;
-    height: 300px;
-    overflow: hidden; 
-}
-
-.galeria img {
-    flex: 1;
-    max-width: 100%; 
-    height: auto; 
-    object-fit: contain;
-    filter: brightness(80%);
-    transition: .7s ease;
-}
-
-.galeria img:hover {
-    filter: brightness(130%);
-    flex: 0 0 100%;
-    max-width: 100%; 
-}
-
-.carousel-item {
-    max-width: 12970;
-    max-height: 315px;
-}
-.carousel-item image{
-    height: 40px;
-    width: 40px;
-}
-.buscador{
-    width: 100%;
-    max-width: 200px;
-    border: 1px solid #ced4da;
-    border-radius: 50px;
-    top: 10px;
- text-align: center;
-}
-#index_tile {
-    margin-top: 10px;
-    border: 1px solid rgba(139, 136, 136, 0.91);
-    min-height: 160px;
+    background-color: #4a148c;
+    color: #fff;
+    padding: 1rem 0;
 }
