@@ -17,7 +17,6 @@ function applyFilters() {
   const size = $("#sizeFilter").val().trim(); 
   const amount = $("#resultLimit").val().trim(); 
   if (!size || !amount) {
-    alert("Please select a size and a result limit."); 
     return; 
   }
 

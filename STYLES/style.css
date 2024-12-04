@@ -1,60 +1,57 @@
+/* Estilos generales */
 body {
     background-color: #fce4ec;
     font-family: 'Arial', sans-serif;
-    background-image: url('../Imagenes/BackGround.jpg'); /* Aplica la imagen de fondo */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen al fondo */
-    background-position: center; /* Centra la imagen */
+    background-image: url('../Imagenes/BackGround.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
+/* Navbar */
 .navbar-custom {
     background: linear-gradient(to right, #e1b3e7, #da71a9);
     color: #fff;
 }
-
 .navbar-logo {
     height: 50px;
     width: auto;
     border-radius: 50%;
 }
-
 .nav-link {
     color: #f8bbd0;
     font-weight: bold;
 }
-
 .nav-link:hover {
     color: #fff;
 }
 
+/* Íconos sociales */
 .social-icon i {
     font-size: 1.5rem;
     color: #f8bbd0;
     transition: color 0.3s;
 }
-
 .social-icon i:hover {
     color: #fff;
 }
 
+/* Hero section */
 .hero-section {
     color: #a04b79;
     padding: 3rem 1rem;
     font-family: emoji;
 }
-
-.info-card {
-    background-color: #902078;
-    border-radius: 50px;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    
+.carousel img {
+    height: 300px;
+    object-fit: cover;
 }
 
-footer {
-    background-color: #4a148c;
-    color: #fff;
-    padding: 1rem 0;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
