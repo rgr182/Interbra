@@ -89,3 +89,7 @@ body {
 .bi-whatsapp:hover {
     color: #128C7E; /* Verde oscuro al pasar cursor */
 }
+.castores-img {
+    max-width: 100%;
+    height: auto;
+}
